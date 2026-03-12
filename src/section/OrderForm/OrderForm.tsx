@@ -19,9 +19,9 @@ Warehouse: ${warehouse}`,
   };
 
   return (
-    <section className="py-20 bg-gray-100">
+    <section id="order" className="py-20 bg-gray-100">
       <div className="max-w-xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Order Now</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">Замовляй зараз</h2>
 
         <form
           onSubmit={handleSubmit}
@@ -29,7 +29,7 @@ Warehouse: ${warehouse}`,
         >
           <input
             type="text"
-            placeholder="Your name"
+            placeholder="Ваше ім'я"
             className="w-full p-3 border rounded-lg"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -38,7 +38,7 @@ Warehouse: ${warehouse}`,
 
           <input
             type="tel"
-            placeholder="Phone number"
+            placeholder="телефон"
             className="w-full p-3 border rounded-lg"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
@@ -47,7 +47,7 @@ Warehouse: ${warehouse}`,
 
           <input
             type="text"
-            placeholder="City"
+            placeholder="місто"
             className="w-full p-3 border rounded-lg"
             value={city}
             onChange={(e) => setCity(e.target.value)}
@@ -56,7 +56,7 @@ Warehouse: ${warehouse}`,
 
           <input
             type="text"
-            placeholder="Nova Poshta warehouse"
+            placeholder="відділення Нової Пошти"
             className="w-full p-3 border rounded-lg"
             value={warehouse}
             onChange={(e) => setWarehouse(e.target.value)}
@@ -67,7 +67,7 @@ Warehouse: ${warehouse}`,
             type="submit"
             className="w-full bg-blue-600 text-white p-3 rounded-lg text-lg hover:bg-blue-700 transition"
           >
-            Place Order
+            Розмістити замовлення
           </button>
         </form>
       </div>
