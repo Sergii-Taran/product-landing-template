@@ -24,29 +24,31 @@ function App() {
 
   return (
     <>
-      <Header />
+      <div className="max-w-[420px] mx-auto bg-white shadow-lg">
+        <Header />
 
-      <div data-aos="fade-up">
-        <Hero />
+        <div data-aos="fade-up">
+          <Hero />
+        </div>
+
+        <div data-aos="fade-up">
+          <Features />
+        </div>
+
+        <div data-aos="fade-up">
+          <Gallery />
+        </div>
+
+        <div data-aos="fade-up">
+          <Reviews />
+        </div>
+
+        <div data-aos="fade-up">
+          <OrderForm />
+        </div>
+
+        <Footer />
       </div>
-
-      <div data-aos="fade-up">
-        <Features />
-      </div>
-
-      <div data-aos="fade-up">
-        <Gallery />
-      </div>
-
-      <div data-aos="fade-up">
-        <Reviews />
-      </div>
-
-      <div data-aos="fade-up">
-        <OrderForm />
-      </div>
-
-      <Footer />
 
       <StickyOrderButton />
       <FloatingContacts />
