@@ -15,7 +15,7 @@ export default function StickyOrderButton() {
         onClick={handleClick}
         className="bg-red-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-red-700 transition"
       >
-        🛒 Buy with 50% discount
+        🛒 Замовити зі знижкою %
       </button>
     </div>
   );

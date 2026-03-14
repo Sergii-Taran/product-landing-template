@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Header from "./layout/Header/Header";
 import Hero from "./section/Hero/Hero";
 import Features from "./section/Features/Features";
 import Gallery from "./section/Gallery/Gallery";
@@ -25,8 +24,6 @@ function App() {
   return (
     <>
       <div className="max-w-[420px] mx-auto bg-white shadow-lg">
-        <Header />
-
         <div data-aos="fade-up">
           <Hero />
         </div>
